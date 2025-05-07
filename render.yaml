@@ -1,0 +1,18 @@
+services:
+- type: webb
+  name: Freepki2
+  env: python
+  buildCommand: pip install -r requirements.txt
+                python manage.py collectstatic --noinput
+  startCommand: gunicorn Freepki2.wsgi:application
+  envVars:
+    - key: DJANGO_SETTINGS_MODULE
+      value: Freepki2.settings
+    - key: SECRET_KEY
+      value: "django-insecure-^+*1yo**(%f+_y5$38qid-o5+6gblfp-3-#0&(y2n41x*ao+_9"
+    - key: ALLOWED_HOSTS
+      value: Freepki2.onrender.com
+    - key: STATIC_ROOT
+    - value: /opt/render/project/src/staticfiles
+
+

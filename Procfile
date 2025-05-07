@@ -1,0 +1,1 @@
+web:gunicorn Freepki2.wsgi:application
