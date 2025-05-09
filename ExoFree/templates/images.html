@@ -1,0 +1,12 @@
+{% extends "freepki/base.html" %}
+{% block title %}Images - Freepki{% endblock %}
+{% block content %}
+<h1>Banque d’Images</h1>
+<p>Découvrez des millions de photos de haute qualité libres d’utilisation.</p>
+
+<div class="gallery">
+    <div class="item"><img src="{% static 'images/photo1.jpg' %}" alt="Photo 1"></div>
+    <div class="item"><img src="{% static 'images/photo2.jpg' %}" alt="Photo 2"></div>
+    <div class="item"><img src="{% static 'images/photo3.jpg' %}" alt="Photo 3"></div>
+</div>
+{% endblock %}

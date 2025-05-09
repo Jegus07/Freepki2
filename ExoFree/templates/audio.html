@@ -1,0 +1,12 @@
+{% extends "freepki/base.html" %}
+{% block title %}Audio - Freepki{% endblock %}
+{% block content %}
+<h1>Bibliothèque Audio</h1>
+<p>Trouvez des musiques libres de droits et des effets sonores de qualité professionnelle.</p>
+
+<div class="gallery">
+    <div class="item"><audio controls><source src="{% static 'audio/track1.mp3' %}"></audio></div>
+    <div class="item"><audio controls><source src="{% static 'audio/track2.mp3' %}"></audio></div>
+    <div class="item"><audio controls><source src="{% static 'audio/track3.mp3' %}"></audio></div>
+</div>
+{% endblock %}

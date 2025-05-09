@@ -1,0 +1,41 @@
+{% load static %} <!-- Charge la balise static -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Ma Page Freepki-2{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajout d'une balise viewport pour les appareils mobiles -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{% url 'suite_ia' %}">Suite IA</a></li>
+                <li><a href="{% url 'images' %}">Images</a></li>
+                <li><a href="{% url 'icones' %}">Icones</a></li>
+                <li><a href="{% url 'videos' %}">Videos</a></li>
+                <li><a href="{% url 'audio' %}">Audio</a></li>
+                <li><a href="{% url 'modeles' %}">Modèles</a></li>
+                <li><a href="{% url 'mockups' %}">Mockups</a></li>
+                <li><a href="{% url 'plus' %}">Plus</a></li>
+            </ul>
+<div class="login-container">
+            <a href="{% url 'login' %}" class="login-btn">Se connecter</a>
+        </div>        </nav>
+    </header>
+
+    <main>
+        {% block content %} <!-- Contenu spécifique de chaque page -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Application Freepik Alex</p> <!-- Copyright -->
+    </footer>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

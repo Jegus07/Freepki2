@@ -1,0 +1,12 @@
+{% extends "freepki/base.html" %}
+{% block title %}Icônes - Freepki{% endblock %}
+{% block content %}
+<h1>Icônes Vectorielles</h1>
+<p>Téléchargez des icônes vectorielles personnalisables pour vos projets web, UI ou print.</p>
+
+<div class="gallery">
+    <div class="item"><img src="{% static 'images/icon1.svg' %}" alt="Icone 1"></div>
+    <div class="item"><img src="{% static 'images/icon2.svg' %}" alt="Icone 2"></div>
+    <div class="item"><img src="{% static 'images/icon3.svg' %}" alt="Icone 3"></div>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "freepki/base.html" %}
+{% block title %}Modèles - Freepki-2{% endblock %}
+{% block content %}
+<h1>Modèles Graphiques</h1>
+<p>Utilisez des modèles prêts à l’emploi : CV, brochures, flyers, présentations, etc.</p>
+
+<div class="gallery">
+    <div class="item"><img src="{% static 'images/template1.jpg' %}" alt="Modèle CV"></div>
+    <div class="item"><img src="{% static 'images/template2.jpg' %}" alt="Modèle Flyer"></div>
+    <div class="item"><img src="{% static 'images/template3.jpg' %}" alt="Modèle Présentation"></div>
+</div>
+{% endblock %}

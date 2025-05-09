@@ -1,0 +1,12 @@
+{% extends "freepki/base.html" %}
+{% block title %}Mockups - Freepki-2{% endblock %}
+{% block content %}
+<h1>Mockups</h1>
+<p>Visualisez vos designs sur des objets réels (T-shirts, téléphones, cartes de visite...)</p>
+
+<div class="gallery">
+    <div class="item"><img src="{% static 'images/mockup1.jpg' %}" alt="Mockup 1"></div>
+    <div class="item"><img src="{% static 'images/mockup2.jpg' %}" alt="Mockup 2"></div>
+    <div class="item"><img src="{% static 'images/mockup3.jpg' %}" alt="Mockup 3"></div>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "freepki/base.html" %}
+{% block title %}Vidéos - Freepki-2{% endblock %}
+{% block content %}
+<h1>Clips Vidéos</h1>
+<p>Parcourez notre collection de vidéos professionnelles pour tous vos besoins créatifs.</p>
+
+<div class="gallery">
+    <div class="item"><video src="{% static 'videos/clip1.mp4' %}" controls></video></div>
+    <div class="item"><video src="{% static 'videos/clip2.mp4' %}" controls></video></div>
+    <div class="item"><video src="{% static 'videos/clip3.mp4' %}" controls></video></div>
+</div>
+{% endblock %}
